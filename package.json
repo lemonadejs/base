@@ -1,0 +1,35 @@
+{
+  "name": "Ecole",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@jsuites/css": "^1.0.6",
+    "@jsuites/menu": "^1.2.3",
+    "@jsuites/login": "^1.0.1",
+    "@jsuites/push-to-refresh": "^1.0.0",
+    "@lemonadejs/dialog": "^1.0.0",
+    "@lemonadejs/actionsheet": "^1.0.0",
+    "@lemonadejs/calendar": "^1.1.4",
+    "@lemonadejs/cropper": "^1.6.2",
+    "@lemonadejs/dropdown": "^1.1.0",
+    "@lemonadejs/list": "^1.2.0",
+    "@lemonadejs/router": "^3.2.0",
+    "@lemonadejs/signature": "^1.2.0",
+    "@lemonadejs/toolbar": "^1.1.1",
+    "@lemonadejs/timeline": "^1.2.0",
+    "@lemonadejs/modal": "^1.2.0",
+    "jsuites": "^4.16.7",
+    "lemonadejs": "^2.8.2",
+    "tocca": "^2.0.9"
+  },
+  "scripts": {
+    "build": "npx webpack --config webpack.config.js",
+    "start": "npx webpack serve --history-api-fallback"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2",
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.1"
+  }
+}
