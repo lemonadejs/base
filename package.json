@@ -1,12 +1,10 @@
 {
   "name": "@lemonadejs/sample",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@lemonadejs/tester": "^1.0.3",
-    "lemonadejs": "^2.8.2"
+    "lemonadejs": "^3.0.0"
   },
-  "type": "module",
   "scripts": {
     "tests": "npx @lemonadejs/tester",
     "build": "npx webpack --config webpack.config.js",

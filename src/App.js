@@ -1,5 +1,5 @@
 import lemonade from 'lemonadejs';
-import Home from './Home';
+import Home from './Home.js';
 
 function App() {
     let self = this;

@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     target: 'web',
     entry: './src/index.js',
@@ -7,7 +9,7 @@ module.exports = {
     },
     output: {
         filename: 'index.js',
-        path: 'public/dist',
+        path: path.resolve(__dirname, 'public/dist'),
     },
     module: {
         rules: [
@@ -18,19 +20,20 @@ module.exports = {
         ],
     },
     devServer: {
+        // contentBase
         static : {
-            directory : "./"
+            directory : path.join(__dirname, "/")
         },
         headers: {
             "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
             "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
         },
-        port: 3010,
+        port: 3005,
         devMiddleware: {
-            publicPath: "https://localhost:3000/dist/",
+            publicPath: "https://localhost:3005/dist/",
         },
         hot: "only",
     },
-    stats: { warnings: false },
+    stats: { warnings:false },
 };
