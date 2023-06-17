@@ -6,7 +6,7 @@
     "lemonadejs": "^3.0.7"
   },
   "scripts": {
-    "tests": "npx @lemonadejs/tester",
+    "test": "mocha --recursive --require=mocha.config.cjs",
     "build": "npx webpack --mode=production --config webpack.config.js",
     "start": "npx webpack serve --history-api-fallback --mode=development"
   },
@@ -18,6 +18,12 @@
     "mini-css-extract-plugin": "^2.7.2",
     "style-loader": "^3.3.1",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-dev-server": "^4.11.1",
+    "c8": "^7.13.0",
+    "chai": "^4.3.7",
+    "jsdom": "^22.0.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
   }
 }
