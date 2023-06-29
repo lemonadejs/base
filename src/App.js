@@ -1,13 +1,14 @@
 import lemonade from 'lemonadejs';
-import Home from './Home.js';
+import Modal from './Modal.js';
 
 function App() {
     let self = this;
-    self.test = "Hello world";
 
-    return `<Home @bind="self.test" @ref="self.component"/>`;
+    return `<Modal title="Hello" width="400" height="400" closed="false">
+        <h1>Hello World</h1>
+    </Modal>`;
 }
 
-lemonade.setComponents({ Home });
+lemonade.setComponents({ Modal });
 
 export default App;
